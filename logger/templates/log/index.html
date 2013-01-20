@@ -1,0 +1,124 @@
+{% include 'common/header.html' %}
+{% load my_filter %}
+<style>
+dt{float:left}
+dd{float:left;padding-left:10px;}
+dl{clear:left;display:block}
+.dd_det{clear:left;padding-left:0;}
+.dd_det dl dt{clear:left}
+.dl_log{margin-top:15px;padding:8px 10px;}
+.dd_det dl dd,.dl_log dd{margin-right:15px}
+.div_sep{height:20px;width:100%;float:left;}
+.keyname{width:80px;}
+
+</style>
+</head>
+<body>
+{#{% current_time "%Y‐%M‐%d %I:%M %p" %}#}
+<div>
+<form method="get">
+<input type="hidden" name="sys_id" id="sys_id" value="{{ sys_id }}"/>
+<input type="hidden" name="mod_id" value="{{ mod_id }}"/>
+<input value="{{ start }}" id="start" name="start" type="text" /><span class="l-text-wrapper">~</span><input value="{{ end }}" id="end" name="end" type="text" />
+<select name="level">
+    <option value="ALL">ALL</option>
+    <option value="INFO">INFO</option>
+    <option value="DEBUG">DEBUG</option>
+    <option value="WARNING">WARNING</option>
+    <option value="ERROR">ERROR</option>
+</select>
+<input id="search" type="submit" value="查询"/>
+</form>
+</div>
+{% for log in logs %}
+    <dl class="dl_log">
+        <dt class="">级别:</dt>
+        <dd>{{ log.level }}</dd>
+        <dt>时间:</dt>
+        <dd>{{ log.time }}</dd>
+        {% if log.detail.rid %}
+        <dt>rid:</dt>
+        <dd>{{ log.detail.rid }}</dd>
+        {% endif %}
+        {% if log.detail.ip %}
+        <dt>ip:</dt>
+        <dd>{{ log.detail.ip }}</dd>
+        {% endif %}
+        <!--<dt class="dt_det">其他:</dt>-->
+        <dd class="dd_det"><dl>
+            {% for d in log.detail %}
+                {% if d not in ',ip,_rid_,' %}
+                <dt>
+                <span key="{{ d }}" class="key key_{{ d }}">
+                {% if d in keyname %}
+                    {{ keyname[d] }}
+                {% else %}
+                    {{ d }}
+                {% endif %}
+                </span>:
+                </dt>
+                <dd>
+                {% if log[detail][d][0] == '{' %}
+                    {{ log[detail][d][0]|loads }}
+                {% else %}
+                {{ log[detail][d] }}
+                {% endif %}
+                </dd>
+                {% endif %}
+            {% endfor %}
+        </dl></dd>
+    </dl>
+    <div class="div_sep"></div>
+{% endfor %}
+</body>
+<style>
+body{padding:20px;}
+.l-text-wrapper{float:left;margin:0 5px;}
+</style>
+<script type="text/javascript" src="/static/js/ligerUI/js/plugins/ligerDateEditor.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.key').dblclick(function(){
+        if($(this).children('input').length>0)
+            return;
+        var key = $(this).attr('key');
+        var val = $.trim($(this).text());
+        $(this).text('');
+        $(this).html('<input type="text" value="'+val+'" class="keyname" key="'+key+'" />');
+        $('.keyname').focus();
+    });
+    $('.keyname').live('blur',function(){
+        if($(this).val() == ''){
+            //console.log($(this).parent('span'));
+            $(this).parent('span').text($(this).attr('key'));
+            $(this).remove();
+            return;
+        }
+        var inp = this;
+        $.ajax({
+            url:'/log/map/',
+            data:'key='+$.trim($(this).attr('key'))+'&name='+$.trim($(this).val())+'&sys_id='+$('#sys_id').val(),
+            type:'post',
+            success:function(res){
+                $(inp).remove();
+                $('.key_'+$(inp).attr('key')).text(res);
+            }
+        });
+    });
+    $('#start').ligerDateEditor({showTime:true});
+    $('#end').ligerDateEditor({showTime:true});
+    {% if start %}
+    $('#start').setValue('{{ start }}');
+    {% endif %}
+    /*
+    manager = $("#search").ligerButton(
+    {
+        click: function ()
+        {
+            alert('111');
+        }
+    }
+); */
+});
+</script>
+</html>

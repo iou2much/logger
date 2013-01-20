@@ -1,0 +1,12 @@
+<html>
+<head>
+
+</head>
+<body>
+<ul>
+{% for s in sys %}
+    <li><a href='/module/list/?sys_id={{ s.id }}'>{{ s.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>

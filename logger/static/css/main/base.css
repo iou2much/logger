@@ -1,0 +1,48 @@
+﻿/*base*/
+div,h1,h2,h3,p,ul,ol,li,table,tr,td,th,form,input,button{margin:0;padding:0;}
+body{font:12px/1.5em "宋体";font-family:Arial, Helvetica, sans-serif;color:#333;text-align:left;margin:0;padding:10px;background:#ecf9ff url(about:blank) top center no-repeat;background-attachment: fixed;}
+ul,ol{list-style:none;}
+img{border:none;}
+a{color:#0066CC;text-decoration:none;}
+a:hover{color:#FF6600;text-decoration:none;}
+.clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+.clear {clear:both;height:10px;font-size: 10px;line-height: 10px;}
+textarea, input, select{ font-size:12px;}
+.inputText{height:20px;line-height:20px;color:#666;border:1px solid #DDD;vertical-align:middle;}
+.inputCheck{vertical-align:middle;}
+.fileText{width:300px;height:20px;line-height:20px;color:#666;border:1px solid #DDD;}
+.selectDown{height:22px;line-height:20px;color:#333;border:1px solid #DDD;}
+.selectDowns{line-height:20px;color:#333;border:1px solid #DDD;padding:3px;}
+.textArea{line-height:20px;color:#333;border:1px solid #DDD;height:100px;}
+.btn{padding:0 5px;margin-right:10px;border:1px solid #999;height:22px;border-top:1px solid #DDD;border-left:1px solid #DDD;line-height:20px;}
+.odd{background:#f4fbff;}
+
+.w10{width:10px;}
+.w20{width:20px;}
+.w30{width:30px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w60{width:60px;}
+.w70{width:70px;}
+.w80{width:80px;}
+.w90{width:90px;}
+.w100{width:100px;}
+.w120{width:120px;}
+.w140{width:140px;}
+.w200{width:200px;}
+.w300{width:300px;}
+.w400{width:400px;}
+.w500{width:500px;}
+.wAuto{width:100%;}
+
+.c999{color:#999;}/*灰色*/
+.cf00{color:#f00;}/*红色*/
+.c03c{color:#03c;}/*蓝色*/
+.c090{color:#090;}/*绿色*/
+.cf60{color:#f60;}/*橙色*/
+
+.topFrame{border-bottom:1px solid #edd8d8;}
+.leftFrame{border-right:1px solid #edd8d8;}
+.mainBox h2{clear:both;display:block;font-size:12px;height:26px;line-height:26px;padding:0;}
+
+.topBox{clear:both;}

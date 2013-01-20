@@ -1,0 +1,13 @@
+<html>
+<head>
+
+</head>
+<body>
+<ul>
+{% for m in mod %}
+    <li><a href='/log/list/?mod_id={{ m.id }}'>{{ m.name }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+

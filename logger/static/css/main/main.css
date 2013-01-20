@@ -1,0 +1,134 @@
+
+.topTab {color: #009933;margin:0px;padding:0 10px;background:url(../img/main_title_bg.png) repeat-x;height:31px;overflow:hidden;}
+.topTab dd {margin:0px;padding:0px 10px;float:left;}
+.topTab dd.ditem {margin-right:8px;}
+.topTab dd.img {padding-top:6px;}
+.topTab .item{text-align:center;width:auto;float:left;height:31px;line-height:31px;overflow:hidden;}
+.topTab .item a{color:#b25555;}
+.topTab .item a:hover{color:#FF6600;}
+.topTab .itemsel {width:auto;float:left;text-align:center;background:url(../img/main_tab_left.png) left top no-repeat; height:31px;line-height:31px;color:#1f4164;overflow:hidden;}
+.topTab .itemsel a{display:block;padding:0px 10px;background:url(../img/main_tab_right.png) right top no-repeat;font-weight: bold;text-decoration: none;color:#333;}
+
+.searchBox{height:auto;overflow:hidden;zoom:1;padding:0 0px 0 0;margin:10px 0 5px 0;position:relative;line-height:26px;}
+.searchBox label{display:block;display:inline-block;float:left;margin-right:10px;padding:2px 0;}
+.searchBox .inputText{width:100px;}
+.searchBox div{height:22px;}
+
+.addBtn{display:block;margin:5px 0;z-index:999;text-align:right;}
+.addBtn .btn{width:auto;margin:0;}
+
+.topMenu{clear:both;display:block;zoom:1;width:auto;height:auto;overflow:hidden;text-align:left;}
+.topMenu a,.topMenu a:hover,.topMenu a:visited{display:block;float:left;padding:4px;margin-bottom:2px;margin-top:8px;border:1px solid #c5d6e6;background:#FFF;margin-right:10px;color:#03c;text-decoration:none;white-space:nowrap;}
+.topMenu a.current{background:#EEE;color:#FF6600;}
+
+/*数据列表页*/
+.tableList{width:auto;}
+.tableList table{border-top:1px solid #c8e0f0;  border-left:1px solid #c8e0f0; background:#fff; table-layout:fixed;word-break:break-all;word-wrap:break-word;}
+.tableList table th{table-layout:fixed; border-right:1px solid #c8e0f0;border-bottom:1px solid #c8e0f0; padding:2px;background:#e0f0f8;text-align:left;}
+.tableList table td{table-layout:fixed; border-right:1px solid #c8e0f0;border-bottom:1px solid #c8e0f0; padding:2px; text-align:left;}
+.tableList table td img{vertical-align:middle;}
+.tableList table td.tCenter{text-align:center;}
+.tableList table th.tCenter{text-align:center;}
+.tableList table tr:hover {background: #ffffe1;color:#36c;}
+.tableList table a{text-decoration:underline;color:#0066cc;}
+.tableList table a:hover{text-decoration:underline;color:#36c;}
+.tableList table .tRight{text-align:center;}
+
+.freeWidth table th, .freeWidth table td{padding:2px 10px;vertical-align:top;}
+
+/*详情页*/
+.detailBox{clear:both;margin:10px 0;}
+.detailBox .tableList table th{text-indent:10px;}
+.detailBox .tableList table td{padding:5px 10px;vertical-align:top;line-height:26px;}
+.detailBox .tableList table tr:hover {background: none;color:#333;}
+.detailBox textarea{width:400px;height:60px;}
+
+.pro_detail_right a{ color:#3366CC;}
+.pro_detail_right span{display:inline;} 
+.pro_detail h1{font-size:18px;margin-bottom:10px;}
+.pro_detail_left{ width:337px; float:left;}
+.pro_detail_left .imgBox{width:310px;height:310px;border:1px solid #ccc;margin-bottom:5px; overflow:hidden; text-align:center;}
+.pro_detail_left .imgBox i{width:310px;height:310px;display:table-cell;font-size:310px;line-height:310px;overflow:hidden;text-align:center;vertical-align: middle;}
+.pro_detail_left .imgBox i img{vertical-align:middle;}
+.pro_detail_left .imgList li{width:100px;height:100px;border:1px solid #ccc;float:left;overflow:hidden;}
+.pro_detail_left .imgList li a{width:100px;height:100px;display:table-cell;font-size:100px;line-height:100px;text-align:center;vertical-align: middle;}
+.pro_detail_left .imgList li img{display:inline;vertical-align:middle;}
+.pro_detail_left .imgList li.mr1{margin-right:6px;}
+.pro_detail_right{ float:left; width:406px;}
+.innerPorDetailRight p{ padding:3px 0;margin:0;}
+.innerPorDetailRight .payMn{ background:#FFFFF1; margin:15px 0;padding:10px; font-size:14px; border:1px solid #FFCC99;}
+.innerPorDetailRight .payMn button{ vertical-align:middle;}
+.pro_detail .cf60{ color:#f60; font-size:16px;}
+.pro_detail .c999{ color:#999;}
+.pro_detail .c36c{ color:#36c;}
+.MYpay{background:#FFFFF1; margin:15px 0;padding:10px; font-size:14px; border:1px solid #FFCC99;}
+.MYpay .txtInputw{ width:65px;}
+.MYpay  .pbtn{ padding:10px 0 5px 0;}
+.MYpay .c36c{ font-size:16px;}
+.favorites{ padding:0;}
+
+.imgBox{float:left;width:100px;}
+.infoBox{float:left;width:600px;}
+
+/*表单页*/
+.tableForm{width:auto;}
+.tableForm table{border-top:1px solid #c8e0f0;  border-left:1px solid #c8e0f0; background:#fff; table-layout:fixed;table-layout: fixed;word-break:break-all;word-wrap:break-word;}
+.tableForm table th{table-layout:fixed; width:150px;border-right:1px solid #c8e0f0;border-bottom:1px solid #c8e0f0; padding:5px;background:#e0f0f8;text-align:left;}
+.tableForm table td{table-layout:fixed; border-right:1px solid #c8e0f0;border-bottom:1px solid #c8e0f0; padding:5px; text-align:left;}
+.tableForm table td img{vertical-align:middle;}
+.tableForm table a{text-decoration:underline;color:#0066cc;}
+.tableForm table a:hover{text-decoration:underline;color:#FF0000;}
+.tableForm .img{margin:5px 0 0 0;}
+
+.operation{margin:5px 0;}
+
+/*分页*/
+.pagesLink{ padding:5px 0 0 0;}
+.pagesLink ul{padding:0;}
+.pagesLink ul li{float:left;font-family:Tahoma;margin-right:5px;color:#ccc;}
+.pagesLink ul li a{float:left;color:#494949;background:#fff;text-decoration:none;border:1px solid #ddd;padding:2px 4px 2px;display:inline-block;}
+.pagesLink ul li a:hover{text-decoration:none;padding:2px 4px 2px;color:#f60;background-color:#eee}
+.pagesLink ul li.thisclass{color:#F63;padding:2px 4px 1px;font-weight:bold;}
+.pagesLink .pageinfo{width:auto;line-height:26px;padding:5px 10px 12px 0px;color:#999;}
+.pagesLink .pageinfo strong{color:#666;font-weight:normal;margin:0px 2px;}
+
+/*手工区块*/
+.previewBox{clear:both;zoom:1;text-align:left;height:auto;overflow:hidden;}
+.hylist{ width:656px; border:1px solid #e6e6e6; float:left;background:#FFF;}
+.hylist_body {line-height:25px;padding-left:10px;}
+.hylist_body .cf00,
+.hylist_body b{ color:#D01112; margin-right:3px;}
+.hylist_body a{ color:#003366; margin:0;text-decoration:none;margin: 0 3px;}
+.hylist_body a:hover{ color:#D01112; text-decoration:none;}
+.hylist_body .hylist_item{display:block;overflow:hidden;zoom:1;background:url(../img/bg_y.png) repeat-y left top; padding:11px 0;border-left:1px solid #fff;border-right:1px dotted #fff;border-top:1px dotted #fff; border-bottom:1px dotted #DCDDDD;}
+.hylist_body .hylist_item .col1{width:38px;padding-top:10px;float:left;  text-align:center; line-height:120%; font-size:14px; color:#666; font-weight:bold;}
+.hylist_body .hylist_item .col2{width:596px;float:left; padding-left:20px;overflow:hidden;display:inline-block;}
+.hylist_body .hylist_item .col2 li{ float:left; width:280px;}
+.hylist_body .hylist_item .col2 li.last{ background:url(ico_08.png) no-repeat left center; padding-left:16px; width:270px;}
+.hylist_body .hylist_item .col2 li.las a{ color:#0063A2;}
+.hylist_body .last_item{ border-bottom:1px solid #fff;}
+
+.goodsCatBody{clear:both;display:block;width:206px;overflow:hidden;}
+.goodsCatBody li{display:block;background:url(../img/ico_22.png) no-repeat 12px center;height:30px;border-bottom:1px solid #dfedf7;padding:0 0 0 21px; overflow:hidden;margin:0;*height:28px;}
+.goodsCatBody li strong{width:67px;float:left; height:30px; margin:0; line-height:28px;overflow:hidden; font-size:14px;}
+.goodsCatBody li strong a{color:#036;}
+.goodsCatBody li strong a:hover{color:#f00;}
+.goodsCatBody li span{width:110px;float:left;height:30px; margin:0; line-height:28px;overflow:hidden;}
+.goodsCatBody li span a{ margin-right:6px; white-space:nowrap;}
+
+/*系统返回信息*/
+.msgReturn{margin:50px 20px 0 20px;border:1px solid #DDD;padding:10px;line-height:26px;background:#FFF;}
+.msgReturn h2{color:#0000cc;font-size:14px;background:url(../img/msgalert.png) left center no-repeat;text-indent:20px;border-bottom:1px dashed #DDD;}
+.msgReturn h3{color:#cc0000;font-size:14px;background:url(../img/msgerror.png) left center no-repeat;text-indent:20px;border-bottom:1px dashed #DDD;}
+.msgDetail{margin:0 0 20px 0;}
+.msgDetail p{font-family:Verdana, Arial, Helvetica, sans-serif;color:#666;padding:0 0 0 20px;}
+.msgDetail a{color:#0000CC;}
+.msgDetail a:hover{color:#CC0000;}
+
+/*商户分期*/
+.category, .groupCredit{clear:both;display:block;zoom:1;}
+.groupCredit{margin:10px 0;}
+.groupCredit p{margin:3px 0;}
+.groupCate{float:left;width:130px;margin:0px 18px;}
+.groupCount{float:left;margin:0px 0;width:500px;}
+.creditBox{clear:both;display:block;zoom:1;background:#F7F7F7;border:1px solid #EEE;padding:3px;}
